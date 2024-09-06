@@ -2,8 +2,11 @@
 Pipeline for a novel way for the imputation of missing values in LC-MS/MS
 
 Example study: 4 biological replicates, 6 timepoints
+
 Each protein was classified for each timepoint as reliably or unreliably detected or undetected depending on its number of not-assigned values (NAs), and the number of NAs of its immediately adjacent days (neighbors). 
+
 A day for a specific protein is considered as a supporting neighbor if it has 0, 1 or 2 NAs (out of 4 replicates). 
+
 A day for a specific protein is considered as an unsopporting neighbor if it has 3 or 4 NAs (out of 4 replicates).
 
 In our study: 
